@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="page-header">
@@ -23,7 +23,7 @@
 			<h5>Early Childhood Special Education (ECSE) classroom at <a href="http://www.pps.net/Domain/161">Whitman Elementary</h5></a>
 			<h4></h4>
 		</div>
-		<div class="col-md-4">
+		<div class="col-md-4 hidden-sm hidden-xs">
 			<ul class="list-group">
 				<li class="list-group-item">
 					<a target="_blank" href="http://www.ddouglas.k12.or.us/departments/multnomah-early-childhood/">
@@ -89,9 +89,39 @@
 	</div>
 </nav>
 
+	
+	<div class='container'>
 
+		<table id='calendar'class='table table-responsive'>
 
+		<div>
+		<div class='table-banner-element col-xs-9 col-sm-3 col-md-2'><h1 class='text-left' id="month-header"></h1></div>
+		<div class='table-banner-element col-xs-3 col-sm-9 col-md-10'><h1 class='text-right' id="year-header"></h1></div>
+		</div>
+		<div class='table-banner-element col-xs-9 col-sm-10'>	<input type="button" class='btn' value="Previous" onClick="prev()"></div>
 
+		<div class='table-banner-element col-xs-3 col-sm-2'>	<input type="button" class='btn pull-right' value="Next" onClick="next()"></div>
+		<thead>
+			<tr>
+			<th>Sun</th>
+			<th>Mon</th>
+			<th>Tue</th>
+			<th>Wed</th>
+			<th>Thu</th>
+			<th>Fri</th>
+			<th>Sat</th>
+			</tr>
+		</thead>
+		<tbody id='calendar-body'>
+
+		</tbody>
+		
+	</table>
+
+	</div>
+	
+	<script src='calendar_data.js'></script>
+	<script src='calendar.js' ></script>
 
 
 </body>

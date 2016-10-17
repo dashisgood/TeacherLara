@@ -1,0 +1,36 @@
+/* table, tr, td{
+
+	border: 1px solid black ;
+} */
+
+.weekend{
+	background-color: #d8d3c9;
+}
+
+.calEntry{
+	min-height: 30px;
+	min-width: 20px;
+	margin:0px;
+}
+
+td {
+	padding:0px;
+	max-width:20px;
+}
+
+.inservice{
+	background-color: grey;
+}
+
+.table-banner-element{
+	float:left;
+}
+
+.date-text{
+
+	font-size:12px;
+}
+
+.birthday{
+	background-color:pink;
+}
